@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_RA_EVA_6_ASSETS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="plat1_logo" translatesAutoresizingMaskIntoConstraints="NO" id="puM-9Z-6K7">
+                                <rect key="frame" x="179" y="28" width="208" height="188"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="iRs-Xp-eJy">
+                                <rect key="frame" x="18" y="276" width="572" height="31"/>
+                                <connections>
+                                    <action selector="sldVal:" destination="BYZ-38-t0r" eventType="valueChanged" id="LwJ-I9-OYC"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVn-Qf-bfh">
+                                <rect key="frame" x="279" y="340" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIV-Qu-xmF">
+                                <rect key="frame" x="218" y="386" width="183" height="62"/>
+                                <state key="normal" title="Oie cy" backgroundImage="button">
+                                    <color key="titleColor" red="0.069967535280000007" green="0.7744535561" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="moradobutton"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="iRs-Xp-eJy" secondAttribute="trailing" constant="-8" id="1qk-EL-wkf"/>
+                            <constraint firstItem="jVn-Qf-bfh" firstAttribute="top" secondItem="iRs-Xp-eJy" secondAttribute="bottom" constant="34" id="HqX-mf-fkk"/>
+                            <constraint firstItem="OIV-Qu-xmF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R6U-sD-FEy"/>
+                            <constraint firstItem="puM-9Z-6K7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="RrH-o5-9qq"/>
+                            <constraint firstItem="OIV-Qu-xmF" firstAttribute="top" secondItem="jVn-Qf-bfh" secondAttribute="bottom" constant="42" id="YtO-gG-8pX"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="iRs-Xp-eJy" secondAttribute="leading" id="b1L-ab-0sR"/>
+                            <constraint firstItem="jVn-Qf-bfh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hwN-z5-rlV"/>
+                            <constraint firstItem="puM-9Z-6K7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vk5-Zz-wWl"/>
+                            <constraint firstItem="iRs-Xp-eJy" firstAttribute="top" secondItem="puM-9Z-6K7" secondAttribute="bottom" constant="60" id="wez-Rd-kHO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblVal" destination="jVn-Qf-bfh" id="HZh-gZ-8ag"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button" width="33" height="33"/>
+        <image name="moradobutton" width="33" height="32"/>
+        <image name="plat1_logo" width="100" height="100"/>
+    </resources>
+</document>

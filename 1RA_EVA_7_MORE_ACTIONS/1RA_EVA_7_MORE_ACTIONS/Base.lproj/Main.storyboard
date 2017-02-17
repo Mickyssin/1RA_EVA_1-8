@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_RA_EVA_7_MORE_ACTIONS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGe-mH-mYV">
+                                <rect key="frame" x="20" y="201" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edad:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7h-ln-vco">
+                                <rect key="frame" x="20" y="252" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="30216_metroid" translatesAutoresizingMaskIntoConstraints="NO" id="mqR-RB-mbh">
+                                <rect key="frame" x="446" y="28" width="134" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="dje-Fx-NVf"/>
+                                    <constraint firstAttribute="width" constant="134" id="ruu-AB-NwH"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ev7-ns-e4a">
+                                <rect key="frame" x="116" y="248" width="464" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Ewg-MA-gmD"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRR-ha-8WO">
+                                <rect key="frame" x="277" y="327" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zMR-fp-all">
+                                <rect key="frame" x="116" y="198" width="464" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Tuk-ho-yTp"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="mqR-RB-mbh" secondAttribute="trailing" id="8KZ-lm-aG1"/>
+                            <constraint firstItem="L7h-ln-vco" firstAttribute="top" secondItem="yGe-mH-mYV" secondAttribute="bottom" constant="26" id="En7-Pj-9ct"/>
+                            <constraint firstItem="zMR-fp-all" firstAttribute="top" secondItem="mqR-RB-mbh" secondAttribute="bottom" constant="74" id="FiU-K2-xTk"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="yGe-mH-mYV" secondAttribute="leading" id="Isn-Jq-khd"/>
+                            <constraint firstItem="mqR-RB-mbh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Vpt-p6-4IW"/>
+                            <constraint firstItem="yGe-mH-mYV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="185" id="Y6G-N4-Kid"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ev7-ns-e4a" secondAttribute="trailing" id="ae2-wB-mVG"/>
+                            <constraint firstItem="zMR-fp-all" firstAttribute="leading" secondItem="yGe-mH-mYV" secondAttribute="trailing" constant="29" id="dgQ-rp-ia6"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="L7h-ln-vco" secondAttribute="leading" id="jcz-pt-pfe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zMR-fp-all" secondAttribute="trailing" id="lj2-5A-KMe"/>
+                            <constraint firstItem="Ev7-ns-e4a" firstAttribute="leading" secondItem="L7h-ln-vco" secondAttribute="trailing" constant="52" id="sxO-cs-xGZ"/>
+                            <constraint firstItem="Ev7-ns-e4a" firstAttribute="top" secondItem="zMR-fp-all" secondAttribute="bottom" constant="20" id="yHG-5b-itp"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="k0w-2e-7O6" appends="YES" id="vT4-lG-PrU"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="tappp" destination="k0w-2e-7O6" id="48Y-4p-LXk"/>
+                        <outlet property="txtF1" destination="zMR-fp-all" id="DWB-zt-pYA"/>
+                        <outlet property="txtF2" destination="Ev7-ns-e4a" id="7EB-Ua-6PD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="30216_metroid" id="Vds-w0-7MS">
+                    <rect key="frame" x="0.0" y="0.0" width="93" height="142"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <tapGestureRecognizer id="k0w-2e-7O6"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="30216_metroid" width="1280" height="1024"/>
+    </resources>
+</document>
